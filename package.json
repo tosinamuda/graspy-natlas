@@ -1,0 +1,32 @@
+{
+  "name": "graspy",
+  "version": "1.0.0",
+  "packageManager": "npm@10.9.2",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "turbo run dev",
+    "dev:hot": "turbo run dev:hot",
+    "start": "turbo run start",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "pm2:start": "pm2 start ecosystem.config.js --env production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.5.8"
+  },
+  "dependencies": {
+    "accept-language": "^3.0.20",
+    "i18next-resources-to-backend": "^1.2.1",
+    "react-cookie": "^8.0.1"
+  }
+}

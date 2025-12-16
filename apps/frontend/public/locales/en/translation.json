@@ -1,0 +1,56 @@
+{
+    "app": {
+        "title": "graspy",
+        "tagline": "Learn any topic in your language",
+        "poweredBy": "Powered by N-Atlas"
+    },
+    "home": {
+        "greeting": "What would you like to learn today?",
+        "subtext": "Type a topic or pick a subject below",
+        "searchPlaceholder": "Type a topic: Democracy, Photosynthesis...",
+        "orChooseSubject": "or pick a subject",
+        "available": "available"
+    },
+    "study": {
+        "backToSubjects": "Back to Subjects",
+        "backToTopics": "Back to Topics",
+        "backToSearch": "Back to Search",
+        "topics": "{{subject}} Topics",
+        "chooseLanguage": "Choose your language",
+        "chatAbout": "Chat about {{topic}}",
+        "chatAboutThis": "Chat about this topic",
+        "generating": "Generating explanation in {{language}}...",
+        "helpful": "Was this explanation helpful?",
+        "contentPlaceholder": "Content will appear here.",
+        "noTopics": "No topics for this subject yet. Ask AI to create one.",
+        "generateQuiz": "Generate Practice Quiz (Coming Soon)",
+        "selectTopic": "Pick a topic to start",
+        "back": "Back",
+        "viewInOtherLanguages": "View in other languages",
+        "hideLanguages": "Hide languages",
+        "readIn": "Read this explanation in",
+        "chat": "Chat"
+    },
+    "sidebar": {
+        "headerTitle": "graspy Chat",
+        "askAbout": "Ask about {{topic}}",
+        "askAboutAnything": "Ask about anything",
+        "greeting": "Hello! I'm graspy.",
+        "helpText": "Chat about <strong>{{topic}}</strong> in {{language}}.",
+        "inputPlaceholder": "Ask a question...",
+        "initialPrompt": "Explain {{topic}}"
+    },
+    "access": {
+        "title": "Access Restricted",
+        "description": "Please enter your access code to verify your identity and continue using the application.",
+        "placeholder": "Enter Access Code",
+        "button": "Verify Access",
+        "error": "Invalid access code.",
+        "footer": "graspy Internal Tool"
+    },
+    "auth": {
+        "welcomeBack": "Welcome Back",
+        "loginPrompt": "Sign in to access your study materials",
+        "googleSignIn": "Sign in with Google"
+    }
+}

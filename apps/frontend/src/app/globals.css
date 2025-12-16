@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+
+  --color-primary: #2D5F3F;
+  --color-secondary: #8B4513;
+  --color-accent: #D4A574;
+  --color-text-dark: #1C1C1E;
+  --color-text-medium: #4A4A4A;
+  --color-text-light: #757575;
+  --color-background: #FAFAF8;
+  --color-surface: #FFFFFF;
+  --color-border: #D8D8D0;
+  --color-hover: #F5F5F0;
+}
+
+:root {
+  --background: #FAFAF8;
+  --foreground: #1C1C1E;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-heading); /* Default UI font */
+}

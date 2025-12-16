@@ -1,0 +1,17 @@
+[project]
+name = "study-chat-server"
+version = "0.1.0"
+description = "Backend for Study Chat"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "pydantic-settings",
+    "dspy-ai",
+    "litellm",
+    "boto3",
+    "sqlalchemy>=2.0.45",
+    "alembic>=1.16.5",
+    "firebase-admin>=7.1.0",
+]

@@ -1,0 +1,56 @@
+{
+    "app": {
+        "title": "graspy",
+        "tagline": "Mụta isiokwu ọ bụla n'asụsụ gị",
+        "poweredBy": "N-Atlas na-enye ya ike"
+    },
+    "home": {
+        "greeting": "Kedu ihe ị chọrọ ịmụta taa?",
+        "subtext": "Pịnye isiokwu ọ bụla ma ọ bụ họrọ ihe ọmụmụ dị n'okpuru",
+        "searchPlaceholder": "Pịnye isiokwu: Ọchịchị onye kwuo uche ya, Photosynthesis...",
+        "orChooseSubject": "ma ọ bụ họrọ ihe ọmụmụ",
+        "available": "dị"
+    },
+    "study": {
+        "backToSubjects": "Laghachi na Ihe ọmụmụ",
+        "backToTopics": "Laghachi na Isiokwu",
+        "backToSearch": "Laghachi na Ọchụchọ",
+        "topics": "Isiokwu nke {{subject}}",
+        "chooseLanguage": "Họrọ asụsụ gị",
+        "chatAbout": "Kparịta ụka gbasara {{topic}}",
+        "chatAboutThis": "Kparịta ụka gbasara isiokwu a",
+        "generating": "Na-emepụta nkọwa na {{language}}...",
+        "helpful": "Nkọwa a ọ nyere aka?",
+        "contentPlaceholder": "Ihe ga-apụta ebe a.",
+        "noTopics": "Enweghị isiokwu maka ihe ọmụmụ a ka. Nwaa ịchọ!",
+        "generateQuiz": "Mepụta Ajụjụ Ọzụzụ (Na-abịa N'oge Na-adịghị Anya)",
+        "selectTopic": "Họrọ isiokwu ka ị bido",
+        "back": "Laghachi",
+        "viewInOtherLanguages": "Hụ n'asụsụ ndị ọzọ",
+        "hideLanguages": "Zoo asụsụ",
+        "readIn": "Gụọ nkọwa a na",
+        "chat": "Kpaa nkata"
+    },
+    "sidebar": {
+        "headerTitle": "Nkata graspy",
+        "askAbout": "Jụọ maka {{topic}}",
+        "askAboutAnything": "Jụọ maka ihe ọ bụla",
+        "greeting": "Ndewo! Abụ m graspy.",
+        "helpText": "Kpaa nkata gbasara <strong>{{topic}}</strong> na {{language}}.",
+        "inputPlaceholder": "Jụọ ajụjụ...",
+        "initialPrompt": "Kọwaa {{topic}}"
+    },
+    "access": {
+        "title": "Amachibidoro Ọnụzọ",
+        "description": "Biko tinye koodu nbanye gị iji chọpụta onye ị bụ ma gaa n'ihu na-eji ngwa ahụ.",
+        "placeholder": "Tinye Koodu Nbanye",
+        "button": "Nyochaa Nbanye",
+        "error": "Koodu nbanye adịghị mma.",
+        "footer": "graspy Internal Tool"
+    },
+    "auth": {
+        "welcomeBack": "Nnọọ",
+        "loginPrompt": "Banye iji nweta ihe ọmụmụ gị",
+        "googleSignIn": "Jiri Google banye"
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "app": {
+        "title": "graspy",
+        "tagline": "Koyi kowane maudu'i a yaren ku",
+        "poweredBy": "N-Atlas ne ke ba shi ƙarfi"
+    },
+    "home": {
+        "greeting": "Me kuke son koyo yau?",
+        "subtext": "Shigar da kowane batu ko zaɓi fanni a ƙasa",
+        "searchPlaceholder": "Buga batu: Dimokuraɗiyya, Photosynthesis...",
+        "orChooseSubject": "ko zaɓi fanni",
+        "available": "akwai"
+    },
+    "study": {
+        "backToSubjects": "Komawa zuwa Fannoni",
+        "backToTopics": "Komawa zuwa Batutuwa",
+        "backToSearch": "Komawa zuwa Bincike",
+        "topics": "Batutuwan {{subject}}",
+        "chooseLanguage": "Zaɓi yaren ku",
+        "chatAbout": "Yi hira game da {{topic}}",
+        "chatAboutThis": "Yi hira game da wannan batu",
+        "generating": "Ana samar da bayani a {{language}}...",
+        "helpful": "Shin wannan bayanin ya taimaka?",
+        "contentPlaceholder": "Abubuwan da ke ciki za su bayyana anan.",
+        "noTopics": "Babu batutuwan da aka shirya don wannan fannin tukuna. Gwada bincike!",
+        "generateQuiz": "Samar da Gwajin Koyo (Yana Zuwa Nan Ba Da Jimawa Ba)",
+        "selectTopic": "Zaɓi batu don farawa",
+        "back": "Baya",
+        "viewInOtherLanguages": "Duba a wasu yarukan",
+        "hideLanguages": "Boye yarukan",
+        "readIn": "Karanta wannan bayanin a",
+        "chat": "Yi Hira"
+    },
+    "sidebar": {
+        "headerTitle": "Hira da graspy",
+        "askAbout": "Yi tambaya game da {{topic}}",
+        "askAboutAnything": "Yi tambaya game da komai",
+        "greeting": "Sannu! Ni ne graspy.",
+        "helpText": "Yi hira game da <strong>{{topic}}</strong> a cikin {{language}}.",
+        "inputPlaceholder": "Yi tambaya...",
+        "initialPrompt": "Yi bayani akan {{topic}}"
+    },
+    "access": {
+        "title": "An iyakance Shiga",
+        "description": "Da fatan za a shigar da lambar shiga don tabbatar da asalin ku kuma ci gaba da amfani da aikace-aikacen.",
+        "placeholder": "Shigar da Lambar Shiga",
+        "button": "Tabbatar da Shiga",
+        "error": "Lambar shiga ba daidai ba ce.",
+        "footer": "graspy Internal Tool"
+    },
+    "auth": {
+        "welcomeBack": "Barka da dawowa",
+        "loginPrompt": "Yi shiga don samun damar kayan karatun ku",
+        "googleSignIn": "Yi shiga tare da Google"
+    }
+}

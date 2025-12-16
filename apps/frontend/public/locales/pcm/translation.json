@@ -1,0 +1,55 @@
+{
+    "app": {
+        "title": "graspy",
+        "tagline": "Learn any topic for your language",
+        "poweredBy": "Na N-Atlas dey power am"
+    },
+    "home": {
+        "greeting": "Wetin you wan learn today?",
+        "subtext": "Type any topic, or pick from the subject dem wey dey below",
+        "searchPlaceholder": "Type topic: Democracy, Photosynthesis...",
+        "orChooseSubject": "or pick subject",
+        "available": "dey"
+    },
+    "study": {
+        "backToSubjects": "Go back to Subject dem",
+        "backToTopics": "Go back to Topic dem",
+        "backToSearch": "Go back to Search",
+        "topics": "{{subject}} Topic dem",
+        "chooseLanguage": "Pick which language you wan use",
+        "chatAbout": "Yarn about {{topic}}",
+        "chatAboutThis": "Yarn about dis topic",
+        "generating": "We dey generate explanation inside {{language}}...",
+        "helpful": "Dis explanation help you?",
+        "contentPlaceholder": "Content go show here.",
+        "noTopics": "We never get topics for dis subject yet. Try search!",
+        "generateQuiz": "Generate Practice Quiz (E dey come soon)",
+        "selectTopic": "Pick topic make you start",
+        "back": "Go back",
+        "viewInOtherLanguages": "Check am for other language",
+        "hideLanguages": "Hide language dem",
+        "readIn": "Read dis explanation for",
+        "chat": "Yarn"
+    },
+    "sidebar": {
+        "headerTitle": "graspy Chat",
+        "askAbout": "Ask about {{topic}}",
+        "askAboutAnything": "Ask anytin wey you wan know",
+        "greeting": "How far! I be graspy.",
+        "helpText": "Chat about <strong>{{topic}}</strong> for {{language}}.",
+        "inputPlaceholder": "Type your question..."
+    },
+    "access": {
+        "title": "Access Don Block",
+        "description": "Abeg enter your access code make we sabi say na you, so you fit continue dey use the app.",
+        "placeholder": "Enter Access Code",
+        "button": "Verify Access",
+        "error": "Access code no correct.",
+        "footer": "graspy Internal Tool"
+    },
+    "auth": {
+        "welcomeBack": "Welcome Back",
+        "loginPrompt": "Sign in make you see your study materials",
+        "googleSignIn": "Sign in with Google"
+    }
+}

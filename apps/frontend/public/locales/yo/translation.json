@@ -1,0 +1,56 @@
+{
+    "app": {
+        "title": "graspy",
+        "tagline": "Kọ ẹkọ lori eyikeyi àkòrí ni ede rẹ",
+        "poweredBy": "Agbara lati ọdọ N-Atlas"
+    },
+    "home": {
+        "greeting": "Kini o fẹ kọ loni?",
+        "subtext": "Tẹ àkòrí kan tàbí yan koko-ọrọ ní isalẹ",
+        "searchPlaceholder": "Tẹ àkòrí kan: Ijọba tiwantiwa, Photosynthesis...",
+        "orChooseSubject": "tàbí yan koko-ọrọ kan",
+        "available": "wa"
+    },
+    "study": {
+        "backToSubjects": "Pada si Awọn Koko-ọrọ",
+        "backToTopics": "Pada si Awọn Akori",
+        "backToSearch": "Pada si Wiwa",
+        "topics": "Awọn Akori {{subject}}",
+        "chooseLanguage": "Yan ede rẹ",
+        "chatAbout": "Sọrọ nipa {{topic}}",
+        "chatAboutThis": "Sọrọ nipa akori yii",
+        "generating": "N ṣe agbekalẹ alaye ni {{language}}...",
+        "helpful": "Njẹ alaye yii wulo?",
+        "contentPlaceholder": "Akoonu yoo han nibi.",
+        "noTopics": "Ko si awọn akori fun koko-ọrọ yii sibẹsibẹ. Gbiyanju wiwa!",
+        "generateQuiz": "Ṣe Agbekalẹ Idanwo Adaṣe (Nbo Laipe)",
+        "selectTopic": "Yan akori kan lati bẹrẹ",
+        "back": "Pada",
+        "viewInOtherLanguages": "Wo ni awọn ede miiran",
+        "hideLanguages": "Tọju awọn ede",
+        "readIn": "Ka àlàyé yìí ní",
+        "chat": "Iwiregbe"
+    },
+    "sidebar": {
+        "headerTitle": "Iwiregbe graspy",
+        "askAbout": "Beere nipa {{topic}}",
+        "askAboutAnything": "Beere nipa ohunkohun",
+        "greeting": "Pẹlẹ o! Emi ni graspy.",
+        "helpText": "Soro nipa <strong>{{topic}}</strong> ni {{language}}.",
+        "inputPlaceholder": "Beere ibeere kan...",
+        "initialPrompt": "Ṣalaye {{topic}}"
+    },
+    "access": {
+        "title": "Wiwọle Ni ihamọ",
+        "description": "Jọwọ tẹ koodu wiwọle rẹ sii lati fidi idanimọ rẹ mulẹ ki o tẹsiwaju lilo ohun elo naa.",
+        "placeholder": "Tẹ Koodu Wiwọle",
+        "button": "Daju Wiwọle",
+        "error": "Koodu wiwọle ti ko tọ.",
+        "footer": "graspy Internal Tool"
+    },
+    "auth": {
+        "welcomeBack": "Kaabo Pada",
+        "loginPrompt": "Wọle lati wọle si awọn ohun elo ikẹkọ rẹ",
+        "googleSignIn": "Wọle pẹlu Google"
+    }
+}

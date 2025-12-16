@@ -1,0 +1,125 @@
+# ──────────────────────────────
+# Global ignores
+# ──────────────────────────────
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.pnpm-debug.log*
+
+# Build / dist outputs
+dist/
+build/
+.next/
+out/
+.vercel/
+.cache/
+coverage/
+tmp/
+temp/
+
+# Turborepo cache
+.turbo/
+turbo/
+
+# TypeScript
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist-info/
+.eggs/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pytype/
+.coverage
+.coverage.*
+htmlcov/
+*.cover
+*.mo
+*.pot
+.tox/
+.nox/
+venv/
+ENV/
+env/
+.venv
+.python-version
+pyrightconfig.json
+.pdm.toml
+uv.lock
+
+# Logs and runtime
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Local envs
+.env
+.env.*
+!.env.example
+!next-env.d.ts
+
+# IDE / Editor cruft
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# macOS nonsense
+.AppleDouble
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# OS & lock junk
+Icon?
+desktop.ini
+
+
+
+# Tests
+__tests__/temp/
+jest-cache/
+
+# VSCode settings for workspaces
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Lint / prettier caches
+.eslintcache
+.prettier-cache
+
+# Optional: local database / storage
+data/
+.db/
+sqlite.db
+*.sqlite
+
+.claude
+internal-docs
+
+cert/

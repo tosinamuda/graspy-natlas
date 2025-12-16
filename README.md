@@ -17,6 +17,8 @@ This project is a **monorepo** containing:
 - **Frontend**: Next.js application running on port **3002**.
 - **Backend**: Python FastAPI service running on port **8082**.
 
+![Graspy Architecture](docs/graspy-architecture-natlas.png)
+
 ```bash
 graspy/
 ├── apps/

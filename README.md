@@ -2,7 +2,7 @@
 
 A multilingual educational platform for secondary school students in Nigeria powered by n-atlas model.
 
-## 🚀 Key Features
+## Key Features
 
 1. **Ask Questions**: Students can ask questions on any topic in **English** or any major **Nigerian language** (Yoruba, Hausa, Igbo, Pidgin).
 2. **Multilingual Explanations**: Get comprehensive explanations in your preferred language.
@@ -10,7 +10,7 @@ A multilingual educational platform for secondary school students in Nigeria pow
 
 ---
 
-## 🛠 Project Structure
+## Project Structure
 
 This project is a **monorepo** containing:
 
@@ -29,7 +29,7 @@ graspy/
 
 ---
 
-## 🏃‍♂️ Local Setup
+## Local Setup
 
 ### Prerequisites
 
@@ -66,14 +66,14 @@ graspy/
 
    ```bash
    cp apps/backend/.env.example apps/backend/.env
-   # Edit .env and add your N-Atlas and Firebase credentials
+   # Edit .env and add your N-Atlas and Firebase private admin credentials
    ```
 
    **Frontend** (`apps/frontend/.env.local`):
 
    ```bash
    cp apps/frontend/.env.example apps/frontend/.env.local
-   # Ensure NEXT_PUBLIC_API_URL=http://localhost:8082/api
+   # Ensure NEXT_PUBLIC_API_URL=http://localhost:8082/api and add your firebase public credentials for authentication
    ```
 
 5. **Run Database Setup**
@@ -93,7 +93,7 @@ graspy/
 
 ---
 
-## 🤖 Model Deployment
+## Model Deployment
 
 The AI model is deployed to **Modal**.
 

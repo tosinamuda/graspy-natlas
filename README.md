@@ -66,7 +66,7 @@ graspy/
 
    ```bash
    cp apps/backend/.env.example apps/backend/.env
-   # Edit .env and add your AWS Bedrock & Strands credentials
+   # Edit .env and add your N-Atlas and Firebase credentials
    ```
 
    **Frontend** (`apps/frontend/.env.local`):

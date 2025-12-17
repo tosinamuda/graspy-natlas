@@ -4,11 +4,7 @@ import { useTranslation } from "@/i18n/client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
-// import { createTopic } from "@/lib/api";
-// import list of subjects
 import { SUBJECTS_DATA } from "@/features/study/constants";
-/* NOTE: We are transitioning to API data but for now keeping hybrid. 
-   Ideally props should come from Server Component. */
 
 type HomeProps = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -40,30 +36,6 @@ export default function Home({ subjects = [] }: HomeProps) {
   const handleSearch = async () => {
     if (!topicInput.trim()) return;
 
-    // Auth Check
-    // Reuse language mapping logic or just pass code and let NewPage handle it.
-    // NewTopicPage handles logic: determines from Query > Locale.
-    // So passing `i18n.language` (code) is fine, but NewTopicPage expects ID mostly?
-    // Actually NewTopicPage: `const queryLang = searchParams.get("language"); ... const finalLanguage = queryLang || localeLang ...`
-    // And it immediately uses `finalLanguage` for API.
-    // The API expects ID (e.g. "yoruba").
-    // So we should map it here in Home or ensure NewTopicPage maps code -> ID.
-    // NewTopicPage has `getLanguageId` logic inside.
-    // Let's pass the raw code or mapped ID?
-    // Home doesn't import LANGUAGES.
-    // Let's just pass the code, and let NewTopicPage map it?
-    // Wait, NewTopicPage does: `const getLanguageId = ... const localeLang = getLanguageId(i18n.language);`
-    // It assumes queryLang is ALREADY the ID? `const finalLanguage = queryLang || localeLang`.
-    // If we pass "yo", finalLanguage becomes "yo". API might fail if it expects "yoruba".
-    // API `create_topic_generator` takes `language`. `get_lm_for_locale` takes ID or Code?
-
-    // Let's check API. `app/config/llm.py` `get_lm_for_locale`.
-    // It likely maps code too.
-    // But consistency is better. Let's pass the mapped ID from Home if possible, or update NewTopicPage to map queryLang too.
-
-    // Let's update NewTopicPage to map allow queryLang to be a code and map it.
-    // But for now, let's just pass `i18n.language` from Home -> `NewTopicPage`.
-
     if (!user) {
       // Redirect to login, then to topic creation
       const target = encodeURIComponent(
@@ -94,7 +66,7 @@ export default function Home({ subjects = [] }: HomeProps) {
           {t("home.subtext")}
         </p>
 
-        <div className="max-w-2xl mx-auto relative mb-12">
+        <div className="max-w-2xl relative mb-12">
           <input
             type="text"
             placeholder={t("home.searchPlaceholder")}
@@ -158,23 +130,47 @@ export default function Home({ subjects = [] }: HomeProps) {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {displaySubjects.map((subject) => (
-          <Link
+          <div
             key={subject.id}
-            href={`/subjects/${subject.slug}`}
-            className="bg-surface border border-border rounded-xl p-8 cursor-pointer hover:-translate-y-1 hover:shadow-lg hover:border-primary transition-all group relative overflow-hidden block"
+            className="bg-surface border border-border rounded-xl p-6 hover:-translate-y-1 hover:shadow-lg hover:border-primary transition-all group relative overflow-hidden flex flex-col h-full"
           >
-            <div className="relative z-10">
-              <h3 className="text-2xl font-bold text-text-dark mb-2 group-hover:text-primary transition-colors font-heading">
-                {subject.title || subject.name}
-              </h3>
-              <p className="text-text-light">
-                {/* Handle count if available */}
-                {t("home.available")}
-              </p>
+            <div className="relative z-10 flex-1">
+              <Link href={`/subjects/${subject.slug}`} className="block">
+                <h3 className="text-2xl font-bold text-text-dark mb-4 group-hover:text-primary transition-colors font-heading">
+                  {subject.title || subject.name}
+                </h3>
+              </Link>
+
+              {subject.topics && subject.topics.length > 0 ? (
+                <div className="space-y-2 mb-4">
+                  {subject.topics.slice(0, 3).map((topic: any) => (
+                    <Link
+                      key={topic.id || topic.slug}
+                      href={`/topic/${topic.id}/${topic.slug}`}
+                      className="text-base text-text-medium flex items-center gap-2 font-body hover:text-primary transition-colors cursor-pointer"
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary/60"></span>
+                      <span className="truncate">{topic.title}</span>
+                    </Link>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-text-light text-sm mb-4">
+                  {t("home.available")}
+                </p>
+              )}
             </div>
-            {/* Icon logic: API subjects might not have React icons serialized. 
-                 We might need a mapping or just generic icon. */}
-          </Link>
+
+            <Link
+              href={`/subjects/${subject.slug}`}
+              className="relative z-10 pt-4 border-t border-border mt-auto flex items-center justify-between text-sm font-medium text-primary cursor-pointer"
+            >
+              <span>{subject.topics?.length || 0} Topics</span>
+              <span className="group-hover:translate-x-1 transition-transform">
+                View All &rarr;
+              </span>
+            </Link>
+          </div>
         ))}
       </div>
     </div>

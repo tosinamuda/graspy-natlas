@@ -1,4 +1,4 @@
-import Home from "@/features/study/components/Home";
+import Home from "@/features/study/pages/Home";
 import { fetchSubjects } from "@/lib/api";
 
 export const dynamic = "force-dynamic";

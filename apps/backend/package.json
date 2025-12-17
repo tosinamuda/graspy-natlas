@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "uv run python main.py"
+    "dev": "uv run python main.py",
+    "start": "uv run python main.py"
   },
   "keywords": [],
   "author": "",

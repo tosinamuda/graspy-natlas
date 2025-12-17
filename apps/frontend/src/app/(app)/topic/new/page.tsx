@@ -3,9 +3,8 @@
 import { useEffect, useState, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
-import { createTopic } from "@/lib/api";
 import { useTranslation } from "@/i18n/client";
-import { Loader2, AlertCircle } from "lucide-react";
+import { AlertCircle } from "lucide-react";
 import Explanation from "@/features/study/components/Explanation";
 
 export default function NewTopicPage() {

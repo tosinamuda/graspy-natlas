@@ -71,17 +71,7 @@ export default function TopicView({ topic }: TopicViewProps) {
     EXPLANATION_CONTEXT,
     topic.subject_id,
     // Pass initial content only if it matches language
-    // We must compare IDs. studyLanguage might be 'yo' (code) or 'yoruba' (ID) depending on state initialization.
-    // Actually `studyLanguage` state is initialized via `getLanguageIdFromCode` (which returns ID "yoruba").
-    // Wait, the log said "studyLanguage: yo".
-    // Check `useState` init logic:
-    // `const initialLang = urlLang || ... getLanguageIdFromCode(i18n.language)`
-    // If `urlLang` was "yo" (from query param), then `initialLang` is "yo".
-    // We should normalize `urlLang` to ID in `TopicView` too!
-
-    // Let's normalize comparison here:
     topic.language === studyLanguage ||
-      topic.language === getLanguageIdFromCode(studyLanguage) ||
       (!topic.language &&
         (studyLanguage === "english" || studyLanguage === "en"))
       ? topic.content

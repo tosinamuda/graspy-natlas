@@ -144,6 +144,107 @@ SUBJECTS_DATA = [
         ]
     },
     {
+        "name": "Technology",
+        "slug": "technology",
+        "is_featured": True,
+        "topics": [
+            {
+                "title": "Robotics",
+                "slug": "robotics",
+                "description": "Design, construction, and operation of robots",
+                "content": "Robotics is an interdisciplinary branch of engineering and science that includes mechanical engineering, electronic engineering, information engineering, computer science, and others."
+            },
+            {
+                "title": "Artificial Intelligence",
+                "slug": "artificial-intelligence",
+                "description": "Simulation of human intelligence by machines",
+                "content": "Artificial intelligence (AI) is intelligence demonstrated by machines, as opposed to the natural intelligence displayed by animals including humans."
+            },
+            {
+                "title": "Generative AI",
+                "slug": "generative-ai",
+                "description": "AI capable of generating text, images, or other media",
+                "content": "Generative artificial intelligence (generative AI) is a type of AI system capable of generating text, images, or other media in response to prompts."
+            }
+        ]
+    },
+    {
+        "name": "Biology",
+        "slug": "biology",
+        "is_featured": True,
+        "topics": [
+            {
+                "title": "Cell Biology",
+                "slug": "cell-biology",
+                "description": "Structure and function of cells",
+                "content": "Cell biology is the study of cell structure and function, and it revolves around the concept that the cell is the fundamental unit of life."
+            },
+            {
+                "title": "Genetics",
+                "slug": "genetics",
+                "description": "Genes, heredity, and variation",
+                "content": "Genetics is a branch of biology concerned with the study of genes, genetic variation, and heredity in organisms."
+            },
+            {
+                "title": "Ecology",
+                "slug": "ecology",
+                "description": "Interactions among organisms",
+                "content": "Ecology is the study of the relationships between living organisms, including humans, and their physical environment."
+            }
+        ]
+    },
+    {
+        "name": "Mathematics",
+        "slug": "mathematics",
+        "is_featured": True,
+        "topics": [
+            {
+                "title": "Algebra",
+                "slug": "algebra",
+                "description": "Symbols and rules for manipulating them",
+                "content": "Algebra is one of the broad parts of mathematics, together with number theory, geometry and analysis."
+            },
+            {
+                "title": "Geometry",
+                "slug": "geometry",
+                "description": "Shapes, sizes, and properties of space",
+                "content": "Geometry is a branch of mathematics that deals with questions of shape, size, relative position of figures, and the properties of space."
+            },
+            {
+                "title": "Calculus",
+                "slug": "calculus",
+                "description": "Continuous change",
+                "content": "Calculus is the mathematical study of continuous change, in the same way that geometry is the study of shape and algebra is the study of generalizations of arithmetic operations."
+            }
+        ]
+    },
+
+    {
+        "name": "English",
+        "slug": "english",
+        "is_featured": True,
+        "topics": [
+            {
+                "title": "English Grammar",
+                "slug": "english-grammar",
+                "description": "Rules of language",
+                "content": "Grammar is the system and structure of a language. The grammar of a language includes basic axioms such as the existence of tenses of verbs, articles and adjectives and their proper order, how questions are phrased, and much more."
+            },
+            {
+                "title": "Literature",
+                "slug": "literature",
+                "description": "Study of written works",
+                "content": "Literature is any collection of written work, but it is also used more narrowly for writings specifically considered to be an art form, especially prose fiction, drama, and poetry."
+            },
+            {
+                "title": "Creative Writing",
+                "slug": "creative-writing",
+                "description": "Art of writing",
+                "content": "Creative writing is any writing that goes outside the bounds of normal professional, journalistic, academic, or technical forms of literature, typically identified by an emphasis on narrative craft, character development, and the use of literary tropes or with various traditions of poetry and poetics."
+            }
+        ]
+    },
+    {
         "name": "Uncategorized",
         "slug": "uncategorized",
         "is_featured": True,
